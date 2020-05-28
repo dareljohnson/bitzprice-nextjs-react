@@ -5,4 +5,5 @@ export default (request, response) => {
 }
 
 // Example deployment:
-// https://https://bitzprice-nextjs-react.now.sh/api/hello?name=reader
+// https://bitzprice-nextjs-react.now.sh/api/hello?name=reader
+
