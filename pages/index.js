@@ -3,6 +3,7 @@ import promise from 'es6-promise';
 promise.polyfill();
 import Layout from '../components/Layout';
 import Prices from '../components/Prices';
+import { getPrice } from '../lib/api'
 
 const Index = ({price}) => (
 	<Layout>
@@ -15,20 +16,10 @@ const Index = ({price}) => (
 );
 
 export async function getServerSideProps() {
-	
-	//const API_URL = "https://api.coindesk.com/v1/bpi/"
-	const {COIN_DESK} = process.env
-	
-	const res = await fetch(`${COIN_DESK}currentprice.json`,
-	{
-		method: 'GET',
-		headers: {}
-	});
-	const data = await res.json();
-
+    const price_data = await getPrice()
 	return {
 		props: {
-			price: data
+			price: price_data
 		}
 	};
 };
