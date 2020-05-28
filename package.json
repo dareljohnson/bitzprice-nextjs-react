@@ -19,7 +19,5 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
-  "devDependencies": {
-    "@now/node": "^1.6.1"
-  }
+  "devDependencies": {}
 }
