@@ -1,6 +1,3 @@
-import fetch from 'isomorphic-fetch';
-import promise from 'es6-promise';
-promise.polyfill();
 import Layout from '../components/Layout';
 import Prices from '../components/Prices';
 import { getPrice } from '../lib/api'
