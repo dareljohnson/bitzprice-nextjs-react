@@ -1,6 +1,5 @@
-import { NowRequest, NowResponse } from '@now/node'
 
-module.exports = (request, response) => {
+export default (request, response) => {
   const { name = 'World' } = request.query
   response.status(200).send(`Hello ${name}!`)
 }
