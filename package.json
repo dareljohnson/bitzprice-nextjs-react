@@ -1,5 +1,9 @@
 {
   "name": "bitzprice",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/dareljohnson/bitzprice-nextjs-react.git"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
